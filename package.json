@@ -1,0 +1,18 @@
+{
+  "name": "fementor_challenge_1",
+  "version": "1.0.0",
+  "description": "Challenge 1 on Front End Mentor",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roman02021/Space-Tourism.git"
+  },
+  "author": "Roman Zemaník",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.46.0"
+  }
+}
