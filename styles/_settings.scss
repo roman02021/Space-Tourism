@@ -1,0 +1,53 @@
+$primary: #0B0D17;
+$primary-light: #979797;
+$secondary: #D0D6F9;
+$ternary: #FFFFFF;
+
+@font-face {
+    font-family: primary;
+    src: url('../assets/fonts/Bellefair-Regular.ttf');
+}
+@font-face {
+    font-family: secondary;
+    src: url('../assets/fonts/BarlowCondensed-Regular.ttf');
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body {
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: secondary;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 9.375rem;
+}
+h2 {
+    font-size: 6.25rem;
+}
+h4 {
+    font-size: 3.5rem;
+}
+h4 {
+    font-size: 2rem;
+}
+h5 {
+    font-size: 1.75rem;
+}
+.subheading {
+    font-size: 1.75rem;
+}
+.subheading-2 {
+    font-size: 0.875rem;
+}
+.nav-text {
+
+}

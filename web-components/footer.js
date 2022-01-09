@@ -1,11 +1,11 @@
 class Footer extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `    
-        <footer>            
-          {*footer code goes here *}         
+        <footer class="footer">            
+            Developed by Roman Zemaník
         </footer>     
       `;
     }
   }
 
-  customElements.define('footer', Footer);
+  customElements.define('c-footer', Footer);

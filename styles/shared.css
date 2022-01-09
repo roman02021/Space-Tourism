@@ -1,0 +1,143 @@
+@font-face {
+  font-family: primary;
+  src: url("../assets/fonts/Bellefair-Regular.ttf");
+}
+@font-face {
+  font-family: secondary;
+  src: url("../assets/fonts/BarlowCondensed-Regular.ttf");
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 18px;
+  font-family: secondary;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 9.375rem;
+}
+
+h2 {
+  font-size: 6.25rem;
+}
+
+h4 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.75rem;
+}
+
+.subheading {
+  font-size: 1.75rem;
+}
+
+.subheading-2 {
+  font-size: 0.875rem;
+}
+
+.page {
+  flex-grow: 1;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  vertical-align: bottom;
+  object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.menu__logo {
+  fill: white;
+  margin-left: 55px;
+}
+.menu__container {
+  height: 96px;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.menu__logo-container {
+  padding-right: 60px;
+  position: relative;
+  z-index: 100;
+}
+.menu__list {
+  width: 830px;
+  background-color: #97979726;
+  backdrop-filter: blur(15px);
+  display: flex;
+  list-style: none;
+  margin: 0;
+  position: relative;
+  height: 100%;
+}
+.menu__list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background-color: #979797;
+  width: 100%;
+  left: calc(-100% + 40px);
+  top: 50%;
+  z-index: 0;
+}
+.menu__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  height: 100%;
+  display: block;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  letter-spacing: 2.7px;
+  align-items: center;
+}
+.menu__link:hover {
+  border-bottom: 3px solid #979797;
+}
+.menu__link.selected {
+  border-bottom: 3px solid #FFFFFF;
+}
+.menu__count {
+  font-weight: bold;
+}
+.menu__text {
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+.menu__item:first-child {
+  margin-left: 90px;
+}
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+.container {
+  max-width: 1160px;
+  padding: 0 20px;
+}
+
+/*# sourceMappingURL=shared.css.map */
