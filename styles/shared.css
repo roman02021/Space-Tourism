@@ -1,56 +1,76 @@
 @font-face {
-  font-family: primary;
-  src: url("../assets/fonts/Bellefair-Regular.ttf");
+  font-family: bellfairRegular;
+  src: url("../assets/fonts/Bellefair-Regular.woff2") format("woff2"), url("../assets/fonts/Bellefair-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: secondary;
-  src: url("../assets/fonts/BarlowCondensed-Regular.ttf");
+  font-family: barlowCondensedRegular;
+  src: url("../assets/fonts/BarlowCondensed-Regular.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Regular.woff") format("woff");
 }
 html {
   box-sizing: border-box;
   font-size: 16px;
+  font-family: barlowCondensedRegular, sans-serif;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-size: 18px;
-  font-family: secondary;
+  font-size: 1.125rem;
   margin: 0;
   padding: 0;
+  color: #FFFFFF;
 }
 
-h1 {
+.heading-1 {
   font-size: 9.375rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
+  margin: 1.5rem 0;
 }
 
-h2 {
+.heading-2 {
   font-size: 6.25rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
 }
 
-h4 {
+.heading-3 {
   font-size: 3.5rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
 }
 
-h4 {
+.heading-4 {
   font-size: 2rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
 }
 
-h5 {
+.heading-5 {
   font-size: 1.75rem;
+  font-family: barlowCondensedRegular;
+  font-weight: normal;
+  color: #D0D6F9;
+  letter-spacing: 4.75px;
 }
 
 .subheading {
   font-size: 1.75rem;
+  font-family: bellfairRegular;
 }
 
 .subheading-2 {
   font-size: 0.875rem;
+  font-family: barlowCondensedRegular;
+  letter-spacing: 2.35px;
+}
+
+.nav-text {
+  font-family: barlowCondensedRegular;
+  letter-spacing: 2.7px;
 }
 
 .page {
-  flex-grow: 1;
+  min-height: 100vh;
+  height: 100vh;
 }
 
 .background {
@@ -58,6 +78,8 @@ h5 {
   height: 100vh;
   vertical-align: bottom;
   object-fit: cover;
+  position: fixed;
+  z-index: -100;
 }
 
 .menu {
@@ -111,6 +133,7 @@ h5 {
   box-sizing: border-box;
   height: 100%;
   display: block;
+  border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
   display: flex;
   letter-spacing: 2.7px;
@@ -136,8 +159,8 @@ h5 {
   margin-right: 50px;
 }
 .container {
-  max-width: 1160px;
-  padding: 0 20px;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=shared.css.map */

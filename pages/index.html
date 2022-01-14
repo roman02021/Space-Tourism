@@ -14,13 +14,27 @@
 </head>
 <body>
     <c-header>HEADER</c-header>
+    <picture>
+        <source srcset="../assets/home/background-home-desktop.jpg" media="(min-width: 1220px)"/>
+        <source srcset="../assets/home/background-home-tablet.jpg" media="(min-width: 682px)"/>
+        <source srcset="../assets/home/background-home-mobile.jpg" media="(max-width: 681px)"/>
+        <img src="../assets/home/background-home-desktop.jpg" alt="background" class="background"/>
+    </picture>
     <main class="page">
-        <picture>
-            <source srcset="../assets/home/background-home-desktop.jpg" media="(min-width: 1220px)"/>
-            <source srcset="../assets/home/background-home-tablet.jpg" media="(min-width: 682px)"/>
-            <source srcset="../assets/home/background-home-mobile.jpg" media="(max-width: 681px)"/>
-            <img src="../assets/home/background-home-desktop.jpg" alt="background" class="background"/>
-        </picture>
+        <div class="container homepage-container">
+            <div class="hero">
+                <div class="hero__text-container">
+                    <span class="heading-5 hero__subheading">SO, YOU WANT TO TRAVEL TO</span>
+                    <h1 class="heading-1 hero__heading">SPACE</h1>
+                    <p class="hero__text">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+                </div>
+                <div class="hero__cta-container">
+                    <button class="hero__cta">
+                        Explore
+                    </button>
+                </div>
+            </div>
+        </div>  
     </main>
     <!-- <c-footer>FOOTER</c-footer> -->
 </body>
