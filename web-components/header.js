@@ -1,6 +1,7 @@
 class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
+      
         <header class="menu">
           <div class="menu__logo-container">
             <a href="index.html">

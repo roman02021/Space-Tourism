@@ -83,7 +83,8 @@
             }
         }
         @media screen and (max-width: $desktop){
-            max-width: fit-content;
+            width: fit-content;
+
         }
         @media screen and (max-width: $tablet){
             max-width: none;
@@ -292,4 +293,11 @@
     max-width: calc(100vw / 2 + 1158px / 2);
     margin-right: auto;
     padding-right: 24px;
+}
+.header-fix {
+    height: $header-fix;
+    width: 100%;
+    @media screen and (max-width: $desktop){
+        height: $header-fix-tablet;
+    }
 }

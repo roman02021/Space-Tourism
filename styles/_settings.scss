@@ -25,6 +25,11 @@ $mobile: 375px + 2 * $gap;
 
 $container-width: 1110px + $gap;
 
+$header-fix: 136px;
+$header-fix-tablet: 96px;
+
+
+
 html {
     box-sizing: border-box;
     font-size: 16px;

@@ -4,23 +4,48 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 125px;
+    // margin-bottom: 125px;
+    height: 100%;
+    align-items: center;
     &__text-container {
         max-width: 440px;
+        // @media screen and (max-width: $desktop){
+        //     margin-top: 6rem;
+        // }
     }
-    // &__heading {
-    //     margin-top: 50px;
-    //     margin-bottom: 70px;
-    // }
+    &__heading {
+        @media screen and (max-width: $tablet){
+            font-size: 6.25rem;
+            text-align: center;
+        }
+    }
     &__text {
         line-height: 28px;
         color: $secondary;
+        @media screen and (max-width: $desktop){
+            text-align: center;
+            font-size: 1rem;
+        }
+        @media screen and (max-width: $tablet){
+            font-size: 0.9375rem;
+        }
     }
     &__subheading {
         font-size: 1.75rem;
+        width: 100%;
+        display: block;
+        @media screen and (max-width: $desktop){
+            text-align: center;
+            font-size: 1.25rem;
+        }
+        @media screen and (max-width: $tablet){
+            font-size: 1rem;
+        }
     }
     &__cta-container {
-
+        @media screen and (max-width: $desktop){
+            margin-top: 4rem;
+        }
     }
     &__cta {
         border-radius: 50%;
@@ -38,10 +63,25 @@
         &:hover{ 
             outline: 60px solid #24262FFF;
         }
+        @media screen and (max-width: $desktop){
+            height: 242px;
+            width: 242px;
+        }
+        @media screen and (max-width: $tablet){
+            font-size: 1.25rem;
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+    @media screen and (max-width: $desktop){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 .homepage-container {
     display: flex;
     align-items: flex-end;
-    height: 100%;
+    height: calc(100% - #{$header-fix})
 }

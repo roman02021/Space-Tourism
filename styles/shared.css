@@ -151,7 +151,7 @@ body {
 }
 @media screen and (max-width: 1158px) {
   .menu__list-container {
-    max-width: fit-content;
+    width: fit-content;
   }
 }
 @media screen and (max-width: 816px) {
@@ -365,6 +365,16 @@ body {
   max-width: calc(100vw / 2 + 1158px / 2);
   margin-right: auto;
   padding-right: 24px;
+}
+
+.header-fix {
+  height: 136px;
+  width: 100%;
+}
+@media screen and (max-width: 1158px) {
+  .header-fix {
+    height: 96px;
+  }
 }
 
 /*# sourceMappingURL=shared.css.map */
