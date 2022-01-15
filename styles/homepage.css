@@ -1,3 +1,7 @@
+:root {
+  --menu-items-container: 0;
+}
+
 @font-face {
   font-family: bellfairRegular;
   src: url("../assets/fonts/Bellefair-Regular.woff2") format("woff2"), url("../assets/fonts/Bellefair-Regular.woff") format("woff");

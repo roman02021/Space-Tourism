@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="../styles/homepage.css">
     <script type="module" src="../web-components/header.js"></script>
     <script type="module" src="../web-components/footer.js"></script>
-    <script type="module" src="../main.js"></script>
     <base href="http://127.0.0.1:5500/pages/index.html">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon-32x32.png">
 </head>
 <body>
-    <c-header>HEADER</c-header>
+    <c-header></c-header>
     <picture>
         <source srcset="../assets/home/background-home-desktop.jpg" media="(min-width: 1220px)"/>
         <source srcset="../assets/home/background-home-tablet.jpg" media="(min-width: 682px)"/>
         <source srcset="../assets/home/background-home-mobile.jpg" media="(max-width: 681px)"/>
         <img src="../assets/home/background-home-desktop.jpg" alt="background" class="background"/>
     </picture>
-    <main class="page">
+    <main class="page js-page">
         <div class="container homepage-container">
             <div class="hero">
                 <div class="hero__text-container">
@@ -36,6 +36,7 @@
             </div>
         </div>  
     </main>
+    <script type="module" src="../main.js"></script>
     <!-- <c-footer>FOOTER</c-footer> -->
 </body>
 </html>
