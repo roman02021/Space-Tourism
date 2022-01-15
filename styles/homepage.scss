@@ -14,6 +14,10 @@
         // }
     }
     &__heading {
+        margin-left: -12px;
+        @media screen and (max-width: $desktop){
+            margin-left: 0;
+        }
         @media screen and (max-width: $tablet){
             font-size: 6.25rem;
             text-align: center;
@@ -62,6 +66,13 @@
         cursor: pointer;
         &:hover{ 
             outline: 60px solid #24262FFF;
+
+            @media screen and (max-width: $desktop){
+                outline: 45px solid #24262FFF;
+            }
+            @media screen and (max-width: $tablet){
+                outline: 30px solid #24262FFF;
+            }
         }
         @media screen and (max-width: $desktop){
             height: 242px;

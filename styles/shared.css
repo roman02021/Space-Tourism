@@ -131,7 +131,7 @@ body {
   backdrop-filter: blur(15px);
   width: 100%;
   margin-left: auto;
-  width: calc(var(--menu-items-container) + (100vw - 1134px) / 2);
+  width: calc(var(--menu-items-container) + (100vw - (1134px - 2 * 24px)) / 2);
 }
 .menu__list-container::before {
   content: "";
@@ -140,7 +140,7 @@ body {
   height: 1px;
   background-color: #979797;
   width: 100%;
-  left: calc(-100% + 40px);
+  left: calc(-100% + 30px);
   top: 50%;
   z-index: 0;
 }
@@ -157,6 +157,7 @@ body {
 @media screen and (max-width: 816px) {
   .menu__list-container {
     max-width: none;
+    width: 255px;
   }
 }
 .menu__logo-container {
@@ -174,7 +175,13 @@ body {
   justify-content: flex-end;
   position: relative;
   height: 100%;
+  padding-left: 30px;
   width: fit-content;
+}
+@media screen and (max-width: 1158px) {
+  .menu__list {
+    padding-left: 0px;
+  }
 }
 @media screen and (max-width: 816px) {
   .menu__list {
@@ -232,7 +239,7 @@ body {
   text-transform: uppercase;
 }
 .menu__item:first-of-type {
-  padding-left: 20px;
+  padding-left: 50px;
 }
 @media screen and (max-width: 816px) {
   .menu__item:first-of-type {
@@ -242,7 +249,7 @@ body {
   }
 }
 .menu__item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 48px;
 }
 @media screen and (max-width: 816px) {
   .menu__item:not(:last-child) {
@@ -282,7 +289,7 @@ body {
   border: none;
   cursor: pointer;
   display: none;
-  padding: 0 0 12px 12px;
+  padding: 12px 0 12px 12px;
 }
 .hamburger__line {
   display: block;
@@ -317,7 +324,7 @@ body {
   border: none;
   display: none;
   background-color: transparent;
-  padding: 0 0 12px 12px;
+  padding: 12px 0 12px 12px;
   position: relative;
   cursor: pointer;
   height: 36px;
@@ -326,7 +333,7 @@ body {
 .hamburger-close::after {
   content: "";
   display: block;
-  background-color: #979797;
+  background-color: #D0D6F9;
   width: 24px;
   height: 3px;
   transform-origin: center;
@@ -336,7 +343,7 @@ body {
 .hamburger-close::before {
   content: "";
   display: block;
-  background-color: #979797;
+  background-color: #D0D6F9;
   width: 24px;
   height: 3px;
   transform-origin: center;

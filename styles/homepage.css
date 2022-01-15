@@ -82,6 +82,14 @@ body {
 .hero__text-container {
   max-width: 440px;
 }
+.hero__heading {
+  margin-left: -12px;
+}
+@media screen and (max-width: 1158px) {
+  .hero__heading {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 816px) {
   .hero__heading {
     font-size: 6.25rem;
@@ -140,6 +148,16 @@ body {
 }
 .hero__cta:hover {
   outline: 60px solid #24262FFF;
+}
+@media screen and (max-width: 1158px) {
+  .hero__cta:hover {
+    outline: 45px solid #24262FFF;
+  }
+}
+@media screen and (max-width: 816px) {
+  .hero__cta:hover {
+    outline: 30px solid #24262FFF;
+  }
 }
 @media screen and (max-width: 1158px) {
   .hero__cta {
