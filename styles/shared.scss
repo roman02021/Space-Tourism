@@ -171,6 +171,12 @@
     &__text {
         margin-left: 10px;
         text-transform: uppercase;
+        @media screen and (max-width: $desktop) {
+            margin-left: 0;
+        }
+        @media screen and (max-width: $tablet) {
+            margin-left: 10px;
+        }
     }
     &__item {
         &:first-of-type {
@@ -300,4 +306,16 @@
     @media screen and (max-width: $desktop){
         height: $header-fix-tablet;
     }
+}
+
+.page-heading {
+    font-family: barlowCondensedRegular;
+    letter-spacing: 3.38px;
+    color: $ternary;
+}
+.page-number {
+    font-family: barlowCondensedBold;
+    color: #4F5259;
+    margin-right: 28px;
+    font-weight: bold;
 }

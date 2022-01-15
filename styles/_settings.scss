@@ -17,6 +17,11 @@ $ternary: #FFFFFF;
     src:    url('../assets/fonts/BarlowCondensed-Regular.woff2') format('woff2'),
             url('../assets/fonts/BarlowCondensed-Regular.woff') format('woff');
 }
+@font-face {
+    font-family: barlowCondensedBold;
+    src:    url('../assets/fonts/BarlowCondensed-Bold.woff2') format('woff2'),
+            url('../assets/fonts/BarlowCondensed-Bold.woff') format('woff');
+}
 
 $gap: 24px;
 $desktop: 1110px + 2 * $gap;
@@ -50,12 +55,14 @@ body {
     font-size: 9.375rem;
     font-weight: normal;
     font-family: bellfairRegular;
+    text-transform: uppercase;
     margin: 1.5rem 0;
 }
 .heading-2 {
     font-size: 6.25rem;
     font-weight: normal;
     font-family: bellfairRegular;
+    text-transform: uppercase;
 }
 .heading-3 {
     font-size: 3.5rem;
@@ -72,6 +79,7 @@ body {
     font-family: barlowCondensedRegular;
     font-weight: normal;
     color: $secondary;
+    text-transform: uppercase;
     letter-spacing: 4.75px;
 }
 .subheading {

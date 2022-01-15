@@ -10,6 +10,10 @@
   font-family: barlowCondensedRegular;
   src: url("../assets/fonts/BarlowCondensed-Regular.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Regular.woff") format("woff");
 }
+@font-face {
+  font-family: barlowCondensedBold;
+  src: url("../assets/fonts/BarlowCondensed-Bold.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Bold.woff") format("woff");
+}
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -27,6 +31,7 @@ body {
   font-size: 9.375rem;
   font-weight: normal;
   font-family: bellfairRegular;
+  text-transform: uppercase;
   margin: 1.5rem 0;
 }
 
@@ -34,6 +39,7 @@ body {
   font-size: 6.25rem;
   font-weight: normal;
   font-family: bellfairRegular;
+  text-transform: uppercase;
 }
 
 .heading-3 {
@@ -53,6 +59,7 @@ body {
   font-family: barlowCondensedRegular;
   font-weight: normal;
   color: #D0D6F9;
+  text-transform: uppercase;
   letter-spacing: 4.75px;
 }
 
@@ -238,6 +245,16 @@ body {
   margin-left: 10px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1158px) {
+  .menu__text {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 816px) {
+  .menu__text {
+    margin-left: 10px;
+  }
+}
 .menu__item:first-of-type {
   padding-left: 50px;
 }
@@ -382,6 +399,19 @@ body {
   .header-fix {
     height: 96px;
   }
+}
+
+.page-heading {
+  font-family: barlowCondensedRegular;
+  letter-spacing: 3.38px;
+  color: #FFFFFF;
+}
+
+.page-number {
+  font-family: barlowCondensedBold;
+  color: #4F5259;
+  margin-right: 28px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=shared.css.map */

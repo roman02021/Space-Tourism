@@ -4,24 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Tourism</title>
+    <title>Destination</title>
     <link rel="stylesheet" href="../styles/shared.css">
-    <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="stylesheet" href="../styles/destination.css">
     <script type="module" src="../web-components/header.js"></script>
     <script type="module" src="../web-components/footer.js"></script>
-    <script type="module" src="../main.js"></script>
+    
     <base href="http://127.0.0.1:5500/pages/index.html">
 </head>
 <body>
-    <c-header>HEADER</c-header>
-    <main class="page">
-        <picture>
-            <source srcset="../assets/home/background-home-desktop.jpg" media="(min-width: 1220px)"/>
-            <source srcset="../assets/home/background-home-tablet.jpg" media="(min-width: 682px)"/>
-            <source srcset="../assets/home/background-home-mobile.jpg" media="(max-width: 681px)"/>
-            <img src="../assets/home/background-home-desktop.jpg" alt="background" class="background"/>
-        </picture>
+    <c-header></c-header>
+    <picture>
+        <source srcset="../assets/destination/background-destination-desktop.jpg" media="(min-width: 1220px)"/>
+        <source srcset="../assets/destination/background-destination-tablet.jpg" media="(min-width: 682px)"/>
+        <source srcset="../assets/destination/background-destination-mobile.jpg" media="(max-width: 681px)"/>
+        <img src="../assets/destination/background-destination-desktop.jpg" alt="background" class="background"/>
+    </picture>
+    <main class="page js-page">
+        <div class="header-fix"></div>
+        <div class="container">
+            <h1 class="heading-5 page-heading"><span class="page-number">01</span>Pick your destination</h1>
+            <div class="destination-tabs">
+                <div class="destination-tabs__image-container js-destination-image-container">
+                  
+                </div>
+                <div class="destination-tabs__info-and-controls">
+                    <ul class="destination-tabs__tabs js-destination-tabs-container">
+                  
+                    </ul>
+                    <div class="destination-tabs__info js-destination-info-container">
+                        <h2 class="heading-1 destination-tabs__heading">
+
+                        </h2>
+                        <p class="destination-tabs__text"></p>
+                        <div class="destination-tabs__stats">
+                            <div class="destination-tabs__stat-container">
+                                <div class="destination-tabs__label"> </div>
+                                <div class="destination-tabs__stat"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../destination.js"></script>
     <!-- <c-footer>FOOTER</c-footer> -->
 </body>
 </html>
