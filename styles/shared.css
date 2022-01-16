@@ -410,7 +410,7 @@ p {
 .page-heading {
   font-family: barlowCondensedRegular;
   letter-spacing: 3.38px;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 .page-number {

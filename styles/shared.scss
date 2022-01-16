@@ -311,7 +311,7 @@
 .page-heading {
     font-family: barlowCondensedRegular;
     letter-spacing: 3.38px;
-    color: $ternary;
+    color: $ternary !important;
 }
 .page-number {
     font-family: barlowCondensedBold;
