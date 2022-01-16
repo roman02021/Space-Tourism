@@ -85,83 +85,33 @@ p {
   max-width: 445px;
 }
 
-.destination-tabs {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5rem;
-}
-.destination-tabs__image {
-  display: none;
-}
-.destination-tabs__image.active {
-  display: block;
-}
-.destination-tabs__text {
-  display: none;
-  border-bottom: 1px solid #979797;
-  color: #D0D6F9;
-  height: 180px;
-  margin-bottom: 1.75rem;
-}
-.destination-tabs__text.active {
-  display: block;
-}
-.destination-tabs__heading {
-  display: none;
-  margin-left: -12px;
-  color: #FFFFFF;
-  font-size: 6.25rem;
-}
-.destination-tabs__heading.active {
-  display: block;
-}
-.destination-tabs__tabs {
-  display: flex;
-  padding: 0;
-}
-.destination-tabs__tab {
-  list-style: none;
-  color: #D0D6F9;
-  cursor: pointer;
-  padding-bottom: 0.75rem;
-  text-transform: uppercase;
-}
-.destination-tabs__tab:not(:last-child) {
-  margin-right: 2.25rem;
-}
-.destination-tabs__tab:hover {
-  border-bottom: 3px solid #979797;
-}
-.destination-tabs__tab.active {
-  border-bottom: 3px solid #FFFFFF;
-  color: #FFFFFF;
-}
-.destination-tabs__stats {
-  display: none;
-  text-transform: uppercase;
-}
-.destination-tabs__stats.active {
+.technology {
   display: flex;
 }
-.destination-tabs__info-and-controls {
-  max-width: 445px;
+.technology__image {
+  display: none;
 }
-.destination-tabs__stat-container:not(:last-child) {
-  margin-right: 5rem;
+.technology__image.active {
+  display: block;
 }
-.destination-tabs__label {
-  font-size: 0.875rem;
-  color: #D0D6F9;
-  letter-spacing: 2.36px;
+.technology__tab.active {
+  border: 3px solid red;
 }
-.destination-tabs__stat {
-  font-size: 1.75rem;
-  color: #FFFFFF;
-  font-family: bellfairRegular;
+.technology__title {
+  display: none;
+}
+.technology__title.active {
+  display: block;
+}
+.technology__description {
+  display: none;
+}
+.technology__description.active {
+  display: block;
 }
 
-.page-heading {
-  color: #FFFFFF;
+.menu__container {
+  width: calc(100vw / 2 + 1158px / 2);
 }
 
-/*# sourceMappingURL=destination.css.map */
+/*# sourceMappingURL=technology.css.map */

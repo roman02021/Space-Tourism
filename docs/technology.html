@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Tourism</title>
+    <title>Technology</title>
     <link rel="stylesheet" href="../styles/shared.css">
-    <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="stylesheet" href="../styles/technology.css">
     <script type="module" src="../web-components/header.js"></script>
     <script type="module" src="../web-components/footer.js"></script>
     <script type="module" src="../main.js"></script>
     <base href="http://127.0.0.1:5500/docs/index.html">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon-32x32.png">
 </head>
 <body>
-    <c-header>HEADER</c-header>
+    <c-header></c-header>
     <picture>
         <source srcset="../assets/technology/background-technology-desktop.jpg" media="(min-width: 1220px)"/>
         <source srcset="../assets/technology/background-technology-tablet.jpg" media="(min-width: 682px)"/>
@@ -22,6 +23,40 @@
     </picture>
     <main class="page js-page">
         <div class="header-fix"></div>
+        <div class="right-container page-container ">
+            <h1 class="heading-5 page-heading"><span class="page-number">03</span>Space launch 101</h1>
+            <div class="technology">
+                <div class="technology__tabs js-technology-tabs-container">
+                    <button class="technology__tab js-technology-tab active" data-tab-id="1">1</button>
+                    <button class="technology__tab js-technology-tab" data-tab-id="2">2</button>
+                    <button class="technology__tab js-technology-tab" data-tab-id="3">3</button>
+                </div>
+                <div class="technology__info js-technology-info-container">
+                    <div class="technology__subtitle">THE TERMINOLOGY…</div>
+                    <h2 class="technology__title active" data-tab-id="1">Launch vehicle</h2>
+                    <h2 class="technology__title" data-tab-id="2">Spaceport</h2>
+                    <h2 class="technology__title" data-tab-id="3">Space capsule</h2>
+                    <p class="technology__description active" data-tab-id="1">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                    <p class="technology__description" data-tab-id="2">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+                    <p class="technology__description" data-tab-id="3">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+                </div>
+                <div class="technology__container js-technology-image-container">
+                    <picture class="technology__image active" data-tab-id="1">
+                        <source media="(min-width:1110px)" srcset="../assets/technology/image-launch-vehicle-portrait.jpg" type="image/jpg"> 
+                        <img src="../assets/technology/image-launch-vehicle-landscape.jpg" alt="Launch vehicle">
+                    </picture>
+                    <picture class="technology__image" data-tab-id="2">
+                        <source media="(min-width:1110px)" srcset="../assets/technology/image-spaceport-portrait.jpg" type="image/jpg"> 
+                        <img src="../assets/technology/image-spaceport-landscape.jpg" alt="Spaceport">
+                    </picture> 
+                    <picture class="technology__image" data-tab-id="3">
+                        <source media="(min-width:1110px)" srcset="../assets/technology/image-space-capsule-portrait.jpg" type="image/jpg"> 
+                        <img src="../assets/technology/image-space-capsule-landscape.jpg" alt="Space capsule">
+                    </picture> 
+                </div>
+            </div>
+
+        </div>
     </main>
     <!-- <c-footer>FOOTER</c-footer> -->
 </body>

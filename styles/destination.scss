@@ -2,6 +2,8 @@
 
 .destination-tabs {
     display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
     &__image {
         display: none;
         &.active {
@@ -10,36 +12,77 @@
     }
     &__text {
         display: none;
+        // padding-bottom: 3.375rem;
+        border-bottom: 1px solid $primary-light;
+        color: $secondary;
+        height: 180px;
+        margin-bottom: 1.75rem;
         &.active {
             display: block;
         }
     }
     &__heading {
         display: none;
+        margin-left: -12px;
+        color: $ternary;
+        font-size: 6.25rem;
         &.active {
             display: block;
         }
     }
     &__tabs {
         display: flex;
+        
+        padding: 0;
+ 
     }
     &__tab {
         list-style: none;
+        color: $secondary;
+        cursor: pointer;
+        padding-bottom: 0.75rem;
+        text-transform: uppercase;
+        &:not(:last-child){
+            margin-right: 2.25rem;
+        }
+        &:hover {
+            border-bottom: 3px solid $primary-light;
+        }
         &.active {
-            border-bottom: 4px solid red;
+            border-bottom: 3px solid $ternary;
+            color: $ternary;
         }
     }
     &__stats {
         display: none;
+        text-transform: uppercase;
         &.active {
-            display: block;
+            display: flex;
         }
+    }
+    &__info-and-controls {
+        max-width: 445px;
+    }
+    &__stat-container {
+        &:not(:last-child){
+            margin-right: 5rem;
+        }
+    }
+    &__label {
+        font-size: 0.875rem;
+        color: $secondary;
+        letter-spacing: 2.36px;
+        
+    }
+    &__stat {
+        font-size: 1.75rem;
+        color: $ternary;
+        font-family: bellfairRegular;
+
     }
 }
 
-.destination-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: calc(100% - #{$header-fix})
+
+.page-heading {
+    color: $ternary;
 }

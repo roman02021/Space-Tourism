@@ -1,3 +1,140 @@
+:root {
+  --menu-items-container: 0;
+}
 
+@font-face {
+  font-family: bellfairRegular;
+  src: url("../assets/fonts/Bellefair-Regular.woff2") format("woff2"), url("../assets/fonts/Bellefair-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: barlowCondensedRegular;
+  src: url("../assets/fonts/BarlowCondensed-Regular.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: barlowCondensedBold;
+  src: url("../assets/fonts/BarlowCondensed-Bold.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Bold.woff") format("woff");
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: barlowCondensedRegular, sans-serif;
+}
+
+body {
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+
+.heading-1 {
+  font-size: 9.375rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+
+.heading-2 {
+  font-size: 6.25rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
+  text-transform: uppercase;
+}
+
+.heading-3 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
+}
+
+.heading-4 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
+}
+
+.heading-5 {
+  font-size: 1.75rem;
+  font-family: barlowCondensedRegular;
+  font-weight: normal;
+  color: #D0D6F9;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+}
+
+.subheading {
+  font-size: 1.75rem;
+  font-family: bellfairRegular;
+}
+
+.subheading-2 {
+  font-size: 0.875rem;
+  font-family: barlowCondensedRegular;
+  letter-spacing: 2.35px;
+}
+
+.nav-text {
+  font-family: barlowCondensedRegular;
+  letter-spacing: 2.7px;
+}
+
+p {
+  line-height: 32px;
+  color: #D0D6F9;
+  max-width: 445px;
+}
+
+.crew {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.crew__picture {
+  display: none;
+}
+.crew__picture.active {
+  display: block;
+}
+.crew__image {
+  vertical-align: bottom;
+}
+.crew__role {
+  display: none;
+}
+.crew__role.active {
+  display: block;
+}
+.crew__name {
+  display: none;
+  text-transform: uppercase;
+}
+.crew__name.active {
+  display: block;
+}
+.crew__bio {
+  display: none;
+}
+.crew__bio.active {
+  display: block;
+}
+.crew__tab {
+  cursor: pointer;
+  background-color: #363841;
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.crew__tab:hover {
+  background-color: #85868B;
+}
+.crew__tab.active {
+  background-color: #FFFFFF;
+}
+
+.content-container {
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=crew.css.map */

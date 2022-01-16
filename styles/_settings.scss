@@ -7,6 +7,8 @@ $primary-light: #979797;
 $secondary: #D0D6F9;
 $ternary: #FFFFFF;
 
+
+
 @font-face {
     font-family: bellfairRegular;
     src:    url('../assets/fonts/Bellefair-Regular.woff2') format('woff2'),
@@ -94,4 +96,9 @@ body {
 .nav-text {
     font-family: barlowCondensedRegular;
     letter-spacing: 2.7px;
+}
+p {
+    line-height: 32px;
+    color: $secondary;
+    max-width: 445px;
 }

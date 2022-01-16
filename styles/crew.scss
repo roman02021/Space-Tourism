@@ -1,0 +1,53 @@
+@use 'settings' as *;
+
+.crew {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__picture {
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+    }
+    &__image {
+        vertical-align: bottom;
+    }
+    &__role {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &__name {
+        display: none;
+        text-transform: uppercase;
+        &.active {
+            display: block;
+        }
+    }
+    &__bio {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &__tab {
+        cursor: pointer;
+        background-color: #363841;
+        border: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        &:hover {
+            background-color: #85868B;
+        }
+        &.active {
+            background-color: $ternary;
+        }
+    }
+}
+.content-container {
+    justify-content: space-between;
+}

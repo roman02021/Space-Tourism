@@ -61,3 +61,63 @@ hamburgerCloseBtn.addEventListener('click', ()=>{
 const root = document.documentElement;
 const menuItemsContainerWidth = document.querySelector('.js-menu-items-container').clientWidth;
 root.style.setProperty('--menu-items-container', `${menuItemsContainerWidth}px`);
+
+
+
+function switchTab(tabId, containers) {
+
+    containers.forEach(container => {
+        for(let imageElement of container.children){
+            if(imageElement.dataset.tabId == tabId){
+                imageElement.classList.add('active');
+            }
+            else {
+                imageElement.classList.remove('active');
+            }
+        }
+    })
+}
+
+//Destination -- START
+
+
+
+const destinationTabs = document.querySelectorAll('.js-tab');
+const imageContainer = document.querySelector('.js-destination-image-container');
+const tabsContainer = document.querySelector('.js-destination-tabs-container');
+const infoContainer = document.querySelector('.js-destination-info-container');
+
+destinationTabs.forEach((tab)=>{
+    // console.log(tab.dataset.tabId);
+    tab.addEventListener('click', (tab) => switchTab(tab.target.dataset.tabId, [imageContainer, tabsContainer, infoContainer]));
+})
+
+//Destination -- END
+
+//Crew -- START
+
+const crewTabs = document.querySelectorAll('.js-crew-tab');
+const crewPhotoContainer = document.querySelector('.js-crew-photo-container');
+const crewTabsContainer = document.querySelector('.js-crew-tabs-container');
+const crewInfoContainer = document.querySelector('.js-crew-info-container');
+
+crewTabs.forEach((tab)=>{
+    // console.log(tab.dataset.tabId);
+    tab.addEventListener('click', (tab) => switchTab(tab.target.dataset.tabId, [crewPhotoContainer, crewTabsContainer, crewInfoContainer]));
+})
+
+//Crew -- END
+
+//Technology -- START
+
+const technologyTabs = document.querySelectorAll('.js-technology-tab');
+const technologyImageContainer = document.querySelector('.js-technology-image-container');
+const technologyTabsContainer = document.querySelector('.js-technology-tabs-container');
+const technologyInfoContainer = document.querySelector('.js-technology-info-container');
+
+technologyTabs.forEach((tab)=>{
+    // console.log(tab.dataset.tabId);
+    tab.addEventListener('click', (tab) => switchTab(tab.target.dataset.tabId, [technologyImageContainer, technologyTabsContainer, technologyInfoContainer]));
+})
+
+//Technology -- END

@@ -1,0 +1,34 @@
+@use 'settings' as *;
+
+.technology {
+    display: flex;
+    &__image {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &__tab {
+        
+        &.active {
+            border: 3px solid red;
+        }
+    }
+    &__title {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &__description {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}
+.menu { 
+    &__container {
+        width: calc(100vw / 2 + 1158px / 2);
+    }
+}

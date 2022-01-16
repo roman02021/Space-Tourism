@@ -319,3 +319,10 @@
     margin-right: 28px;
     font-weight: bold;
 }
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - #{$header-fix})
+}
