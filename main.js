@@ -13,7 +13,7 @@ document.links[selected].classList.add('selected');
 //Menu item container width -- START
 const root = document.documentElement;
 
-const menuItemsContainerWidth = document.querySelector('.js-menu-items-container').clientWidth;
+let menuItemsContainerWidth = document.querySelector('.js-menu-items-container').clientWidth;
 const listContainer = document.querySelector('.js-list-container');
 
 console.log(document.querySelector('.js-menu-items-container').clientWidth);
@@ -25,6 +25,7 @@ const mediaQuery = window.matchMedia('(max-width: 1158px)');
 //Recalculate menuItemsContainerWidth variable when coming from less than desktop resolution
 mediaQuery.addEventListener('change', e => {
 if (!e.matches) {
+    menuItemsContainerWidth = document.querySelector('.js-menu-items-container').clientWidth;
     root.style.setProperty('--menu-items-container', `${menuItemsContainerWidth}px`);
 }
 })

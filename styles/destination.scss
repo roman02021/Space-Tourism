@@ -1,8 +1,45 @@
-.destination-tabs {
-    &__image-container {
+@use 'settings' as *;
 
-    }
+.destination-tabs {
+    display: flex;
     &__image {
-        // display: none;
+        display: none;
+        &.active {
+            display: block;
+        }
     }
+    &__text {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &__heading {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &__tabs {
+        display: flex;
+    }
+    &__tab {
+        list-style: none;
+        &.active {
+            border-bottom: 4px solid red;
+        }
+    }
+    &__stats {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.destination-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - #{$header-fix})
 }

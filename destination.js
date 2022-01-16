@@ -1,25 +1,38 @@
-async function buildDestinationPage() {
-    const data = await (await fetch('/data.json')).json();
-    const destinationData = data.destinations;
-
+function switchTab(tabId) {
     const imageContainer = document.querySelector('.js-destination-image-container');
     const tabsContainer = document.querySelector('.js-destination-tabs-container');
     const infoContainer = document.querySelector('.js-destination-info-container');
 
-    const domParser = new DOMParser();
+    for(let imageElement of imageContainer.children){
+        if(imageElement.dataset.tabId == tabId){
+            imageElement.classList.add('active');
+        }
+        else {
+            imageElement.classList.remove('active');
+        }
+    }
+    for(let tabElement of tabsContainer.children){
+        if(tabElement.dataset.tabId == tabId){
+            tabElement.classList.add('active');
+        }
+        else {
+            tabElement.classList.remove('active');
+        }
+    }
+    for(let infoElement of infoContainer.children){
+        if(infoElement.dataset.tabId == tabId){
+            infoElement.classList.add('active');
+        }
+        else {
+            infoElement.classList.remove('active');
+        }
+    }
 
-    destinationData.forEach(destination => {
-        
-        const imageContainerHtmlString = `<picture>
-        <source srcset="${destination.images.webp}" type="image/webp">
-        <source srcset="${destination.images.png}" type="image/png"> 
-        <img src="${destination.images.webp}" alt="${destination.name}" id="moon" class="destination-tabs__image">
-        </picture>`;
-
-        const imageContainerNode = domParser.parseFromString(imageContainerHtmlString, 'text/html').body.firstElementChild;
-        imageContainer.appendChild(imageContainerNode);
-    })
-    
 }
-buildDestinationPage();
 
+const tabs = document.querySelectorAll('.js-tab');
+
+tabs.forEach((tab)=>{
+    // console.log(tab.dataset.tabId);
+    tab.addEventListener('click', (tab) => switchTab(tab.target.dataset.tabId));
+})

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="stylesheet" href="../styles/shared.css">
+    <link rel="stylesheet" href="../styles/destination.css">
+    <script type="module" src="../web-components/header.js"></script>
+    <script type="module" src="../web-components/footer.js"></script>
+    
+    <base href="http://127.0.0.1:5500/docs/index.html">
+</head>
+<body>
+    <c-header></c-header>
+    <picture>
+        <source srcset="../assets/destination/background-destination-desktop.jpg" media="(min-width: 1220px)"/>
+        <source srcset="../assets/destination/background-destination-tablet.jpg" media="(min-width: 682px)"/>
+        <source srcset="../assets/destination/background-destination-mobile.jpg" media="(max-width: 681px)"/>
+        <img src="../assets/destination/background-destination-desktop.jpg" alt="background" class="background"/>
+    </picture>
+    <main class="page js-page">
+        <div class="header-fix"></div>
+        <div class="destination-container container">
+            <h1 class="heading-5 page-heading"><span class="page-number">01</span>Pick your destination</h1>
+            <div class="destination-tabs">
+
+                <div class="destination-tabs__image-container js-destination-image-container">
+                    <picture data-tab-id="moon" class="destination-tabs__image active">
+                        <source srcset="../assets/destination/image-moon.webp" type="image/webp">
+                        <source srcset="../assets/destination/image-moon.png" type="image/png"> 
+                        <img src="../assets/destination/image-moon.webp" alt="Moon" data-tab-id="moon">
+                    </picture>
+                    <picture data-tab-id="mars" class="destination-tabs__image">
+                        <source srcset="../assets/destination/image-mars.webp" type="image/webp">
+                        <source srcset="../assets/destination/image-mars.png" type="image/png"> 
+                        <img src="../assets/destination/image-mars.webp" alt="Mars"  >
+                    </picture>
+                    <picture data-tab-id="europa" class="destination-tabs__image">
+                        <source srcset="../assets/destination/image-europa.webp" type="image/webp">
+                        <source srcset="../assets/destination/image-europa.png" type="image/png"> 
+                        <img src="../assets/destination/image-europa.webp" alt="Europa" >
+                    </picture>
+                    <picture data-tab-id="titan" class="destination-tabs__image">
+                        <source srcset="../assets/destination/image-titan.webp" type="image/webp">
+                        <source srcset="../assets/destination/image-titan.png" type="image/png"> 
+                        <img src="../assets/destination/image-titan.webp" alt="Titan"  >
+                    </picture>
+                </div>
+                <div class="destination-tabs__info-and-controls">
+                    <ul class="destination-tabs__tabs js-destination-tabs-container">
+                        <li class="destination-tabs__tab active js-tab" data-tab-id="moon">Moon</li>
+                        <li class="destination-tabs__tab js-tab" data-tab-id="mars">Mars</li>
+                        <li class="destination-tabs__tab js-tab" data-tab-id="europa">Europa</li>
+                        <li class="destination-tabs__tab js-tab" data-tab-id="titan">Titan</li>
+                    </ul>
+                    <div class="destination-tabs__info js-destination-info-container">
+                        <h2 class="heading-1 destination-tabs__heading active" data-tab-id="moon">
+                            Moon
+                        </h2>
+                        <h2 class="heading-1 destination-tabs__heading" data-tab-id="mars">
+                            Mars
+                        </h2>
+                        <h2 class="heading-1 destination-tabs__heading" data-tab-id="europa">
+                            Europa
+                        </h2>
+                        <h2 class="heading-1 destination-tabs__heading" data-tab-id="titan">
+                            Titan
+                        </h2>
+                        <p class="destination-tabs__text active" data-tab-id="moon">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                        <p class="destination-tabs__text" data-tab-id="mars">
+                            Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+                        <p class="destination-tabs__text" data-tab-id="europa">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+                        <p class="destination-tabs__text" data-tab-id="titan">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+                        <div class="destination-tabs__stats active" data-tab-id="moon">
+                            <div class="destination-tabs__stat-container">
+                                <div class="destination-tabs__label">
+                                    Avg. distance </div>
+                                <div class="destination-tabs__stat">384,400 km</div>
+                            </div>
+                            <div class="destination-tabs__stat-container">
+                                <div class="destination-tabs__label">
+                                    Est. travel time </div>
+                                <div class="destination-tabs__stat">3 days</div>
+                            </div>
+                        </div>
+                        <div class="destination-tabs__stats" data-tab-id="mars">
+                            <div class="destination-tabs__stat-container">
+                                <div class="destination-tabs__label">
+                                    Avg. distance </div>
+                                <div class="destination-tabs__stat">225 mil. km</div>
+                            </div>
+                            <div class="destination-tabs__stat-container">
+                                <div class="destination-tabs__label">
+                                    Est. travel time </div>
+                                <div class="destination-tabs__stat">9 months</div>
+                            </div>
+                        </div>
+                        <div class="destination-tabs__stats" data-tab-id="europa">
+                            <div class="destination-tabs__stat-container">
+                                <div class="destination-tabs__label">
+                                    Avg. distance </div>
+                                <div class="destination-tabs__stat">628 mil. km</div>
+                            </div>
+                            <div class="destination-tabs__stat-container">
+                                <div class="destination-tabs__label">
+                                    Est. travel time </div>
+                                <div class="destination-tabs__stat">3 years</div>
+                            </div>
+                        </div>
+                        <div class="destination-tabs__stats" data-tab-id="titan">
+                            <div class="destination-tabs__stat-container">
+                                <div class="destination-tabs__label">
+                                    Avg. distance </div>
+                                <div class="destination-tabs__stat">1.6 bil. km</div>
+                            </div>
+                            <div class="destination-tabs__stat-container">
+                                <div class="destination-tabs__label">
+                                    Est. travel time </div>
+                                <div class="destination-tabs__stat">7 years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../destination.js"></script>
+    <!-- <c-footer>FOOTER</c-footer> -->
+</body>
+</html>

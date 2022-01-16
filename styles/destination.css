@@ -1,3 +1,126 @@
+:root {
+  --menu-items-container: 0;
+}
 
+@font-face {
+  font-family: bellfairRegular;
+  src: url("../assets/fonts/Bellefair-Regular.woff2") format("woff2"), url("../assets/fonts/Bellefair-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: barlowCondensedRegular;
+  src: url("../assets/fonts/BarlowCondensed-Regular.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: barlowCondensedBold;
+  src: url("../assets/fonts/BarlowCondensed-Bold.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Bold.woff") format("woff");
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: barlowCondensedRegular, sans-serif;
+}
+
+body {
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+
+.heading-1 {
+  font-size: 9.375rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+
+.heading-2 {
+  font-size: 6.25rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
+  text-transform: uppercase;
+}
+
+.heading-3 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
+}
+
+.heading-4 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: bellfairRegular;
+}
+
+.heading-5 {
+  font-size: 1.75rem;
+  font-family: barlowCondensedRegular;
+  font-weight: normal;
+  color: #D0D6F9;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+}
+
+.subheading {
+  font-size: 1.75rem;
+  font-family: bellfairRegular;
+}
+
+.subheading-2 {
+  font-size: 0.875rem;
+  font-family: barlowCondensedRegular;
+  letter-spacing: 2.35px;
+}
+
+.nav-text {
+  font-family: barlowCondensedRegular;
+  letter-spacing: 2.7px;
+}
+
+.destination-tabs {
+  display: flex;
+}
+.destination-tabs__image {
+  display: none;
+}
+.destination-tabs__image.active {
+  display: block;
+}
+.destination-tabs__text {
+  display: none;
+}
+.destination-tabs__text.active {
+  display: block;
+}
+.destination-tabs__heading {
+  display: none;
+}
+.destination-tabs__heading.active {
+  display: block;
+}
+.destination-tabs__tabs {
+  display: flex;
+}
+.destination-tabs__tab {
+  list-style: none;
+}
+.destination-tabs__tab.active {
+  border-bottom: 4px solid red;
+}
+.destination-tabs__stats {
+  display: none;
+}
+.destination-tabs__stats.active {
+  display: block;
+}
+
+.destination-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 136px);
+}
 
 /*# sourceMappingURL=destination.css.map */
