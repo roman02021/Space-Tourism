@@ -146,6 +146,10 @@ p {
   }
 }
 .hero__cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0B0D17;
   border-radius: 50%;
   background-color: #FFFFFF;
   font-size: 2rem;
@@ -158,6 +162,7 @@ p {
   height: 275px;
   width: 275px;
   cursor: pointer;
+  text-decoration: none;
 }
 .hero__cta:hover {
   outline: 60px solid #24262FFF;

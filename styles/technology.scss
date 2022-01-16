@@ -2,29 +2,60 @@
 
 .technology {
     display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
     &__image {
         display: none;
         &.active {
             display: block;
         }
     }
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+        margin-right: 80px;
+    }
     &__tab {
-        
+        font-family: bellfairRegular;
+        font-size: 2rem;
+        border: 1px solid #363841;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 50%;
+        color: $ternary;
+        height: 80px;
+        width: 80px;
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
         &.active {
-            border: 3px solid red;
+            border: 1px solid $ternary;
+            background-color: $ternary;
+            color: $primary;
+        }
+        &:hover {
+            border-color: $ternary;
         }
     }
     &__title {
         display: none;
+        text-transform: uppercase;
+        margin: 12px 0 12px -4px;
         &.active {
             display: block;
         }
     }
     &__description {
         display: none;
+        margin-top: 0;
+        margin-right: 0;
         &.active {
             display: block;
         }
+    }
+    &__tabs-and-info {
+        display: flex;
     }
 }
 .menu { 

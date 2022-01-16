@@ -52,6 +52,10 @@
         }
     }
     &__cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary;
         border-radius: 50%;
         background-color: $ternary;
         font-size: 2rem;
@@ -64,6 +68,7 @@
         height: 275px;
         width: 275px;
         cursor: pointer;
+        text-decoration: none;
         &:hover{ 
             outline: 60px solid #24262FFF;
 

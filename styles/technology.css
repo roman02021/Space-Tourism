@@ -87,6 +87,9 @@ p {
 
 .technology {
   display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 .technology__image {
   display: none;
@@ -94,20 +97,51 @@ p {
 .technology__image.active {
   display: block;
 }
+.technology__tabs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+.technology__tab {
+  font-family: bellfairRegular;
+  font-size: 2rem;
+  border: 1px solid #363841;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #FFFFFF;
+  height: 80px;
+  width: 80px;
+}
+.technology__tab:not(:last-child) {
+  margin-bottom: 2rem;
+}
 .technology__tab.active {
-  border: 3px solid red;
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  color: #0B0D17;
+}
+.technology__tab:hover {
+  border-color: #FFFFFF;
 }
 .technology__title {
   display: none;
+  text-transform: uppercase;
+  margin: 12px 0 12px -4px;
 }
 .technology__title.active {
   display: block;
 }
 .technology__description {
   display: none;
+  margin-top: 0;
+  margin-right: 0;
 }
 .technology__description.active {
   display: block;
+}
+.technology__tabs-and-info {
+  display: flex;
 }
 
 .menu__container {

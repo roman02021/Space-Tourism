@@ -389,6 +389,7 @@ p {
   max-width: calc(100vw / 2 + 1158px / 2);
   margin-left: auto;
   padding-left: 24px;
+  height: calc(100% - 136px);
 }
 
 .left-container {
@@ -411,6 +412,8 @@ p {
   font-family: barlowCondensedRegular;
   letter-spacing: 3.38px;
   color: #FFFFFF !important;
+  position: absolute;
+  top: 212px;
 }
 
 .page-number {

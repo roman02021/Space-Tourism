@@ -294,6 +294,7 @@
     max-width: calc(100vw / 2 + 1158px / 2);
     margin-left: auto;
     padding-left: 24px;
+    height: calc(100% - #{$header-fix})
 }
 .left-container {
     max-width: calc(100vw / 2 + 1158px / 2);
@@ -312,6 +313,9 @@
     font-family: barlowCondensedRegular;
     letter-spacing: 3.38px;
     color: $ternary !important;
+    // margin-top: 0;
+    position: absolute;
+    top: 212px;
 }
 .page-number {
     font-family: barlowCondensedBold;
