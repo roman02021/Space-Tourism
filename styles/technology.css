@@ -14,19 +14,6 @@
   font-family: barlowCondensedBold;
   src: url("../assets/fonts/BarlowCondensed-Bold.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Bold.woff") format("woff");
 }
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: barlowCondensedRegular, sans-serif;
-}
-
-body {
-  font-size: 1.125rem;
-  margin: 0;
-  padding: 0;
-  color: #FFFFFF;
-}
-
 .heading-1 {
   font-size: 9.375rem;
   font-weight: normal;

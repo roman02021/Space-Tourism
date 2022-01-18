@@ -14,19 +14,6 @@
   font-family: barlowCondensedBold;
   src: url("../assets/fonts/BarlowCondensed-Bold.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Bold.woff") format("woff");
 }
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: barlowCondensedRegular, sans-serif;
-}
-
-body {
-  font-size: 1.125rem;
-  margin: 0;
-  padding: 0;
-  color: #FFFFFF;
-}
-
 .heading-1 {
   font-size: 9.375rem;
   font-weight: normal;
@@ -87,15 +74,19 @@ p {
 
 .crew {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 100%;
+  flex-grow: 1;
 }
 .crew__photo-container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  justify-content: center;
+}
+@media screen and (max-width: 1158px) {
+  .crew__photo-container {
+    align-items: center;
+  }
 }
 .crew__picture {
   display: none;
@@ -109,8 +100,12 @@ p {
 .crew__info {
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: center;
+}
+@media screen and (max-width: 1158px) {
+  .crew__info {
+    align-items: center;
+  }
 }
 .crew__info-subcontainer {
   margin-top: 150px;
@@ -152,6 +147,11 @@ p {
 }
 .crew__tab.active {
   background-color: #FFFFFF;
+}
+@media screen and (max-width: 1158px) {
+  .crew {
+    flex-direction: column;
+  }
 }
 
 .content-container {

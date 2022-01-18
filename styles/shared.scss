@@ -1,10 +1,31 @@
 @use 'settings' as *;
 
 
-
-.page {
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: barlowCondensedRegular, sans-serif;
+}
+body {
+    // display: flex;
+    // flex-direction: column;
     min-height: 100vh;
-    height: 100vh;
+    font-size: 1.125rem;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: $ternary;
+    display: flex;
+    flex-direction: column;
+}
+.page {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &--stick-to-bottom {
+        justify-content: flex-end;
+    }
 }
 
 .background {
@@ -14,11 +35,12 @@
     object-fit: cover;
     position: fixed;
     z-index: -100;
+    top: 0;
 }
 
 .menu {
     display: flex;
-    position: fixed;
+    // position: fixed;
     align-items: center;
     width: 100vw;
     justify-content: space-between;
@@ -289,6 +311,7 @@
 }
 
 .container {
+    width: 100%;
     max-width: 1110px;
     margin: 0 auto;
     padding: 0 24px;
@@ -317,9 +340,10 @@
     font-family: barlowCondensedRegular;
     letter-spacing: 3.38px;
     color: $ternary !important;
-    // margin-top: 0;
-    position: absolute;
-    top: 212px;
+    margin-top: 0;
+    // position: absolute;
+    width: 100%;
+    // top: 212px;
     @media screen and (max-width: $desktop) {
         top: 136px;
         font-size: 1.25rem !important;
@@ -327,9 +351,10 @@
     @media screen and (max-width: $tablet) {
         top: 88px;
         font-size: 1rem !important;
-        left: 50%;
-        transform: translateX(-50%);
-        width: fit-content;
+        text-align: center;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // width: fit-content;
     }
 }
 .page-number {
@@ -344,8 +369,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100% - #{$header-fix});
+    flex-grow: 1;
+    // height: calc(100% - #{$header-fix});
     @media screen and (max-width: $desktop) {
-        height: calc(100% - #{$header-fix-tablet});
+        // height: calc(100% - #{$header-fix-tablet});
     }
 }

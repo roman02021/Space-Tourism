@@ -14,15 +14,17 @@
 </head>
 <body>
     <c-header></c-header>
-    <picture>
-        <source srcset="../assets/destination/background-destination-desktop.jpg" media="(min-width: 1220px)"/>
-        <source srcset="../assets/destination/background-destination-tablet.jpg" media="(min-width: 682px)"/>
-        <source srcset="../assets/destination/background-destination-mobile.jpg" media="(max-width: 681px)"/>
-        <img src="../assets/destination/background-destination-desktop.jpg" alt="background" class="background"/>
-    </picture>
     <main class="page js-page">
-        <div class="header-fix"></div>
-        <div class="content-container container">
+        
+        <picture>
+            <source srcset="../assets/destination/background-destination-desktop.jpg" media="(min-width: 1220px)"/>
+            <source srcset="../assets/destination/background-destination-tablet.jpg" media="(min-width: 682px)"/>
+            <source srcset="../assets/destination/background-destination-mobile.jpg" media="(max-width: 681px)"/>
+            <img src="../assets/destination/background-destination-desktop.jpg" alt="background" class="background"/>
+        </picture>
+        <!-- <div class="header-fix"></div> -->
+        <div class="content-container">
+            <div class="container">
             <h1 class="heading-5 page-heading"><span class="page-number">01</span>Pick your destination</h1>
             <div class="destination-tabs">
 
@@ -124,6 +126,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <script type="module" src="../main.js"></script>

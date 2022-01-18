@@ -14,19 +14,6 @@
   font-family: barlowCondensedBold;
   src: url("../assets/fonts/BarlowCondensed-Bold.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Bold.woff") format("woff");
 }
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: barlowCondensedRegular, sans-serif;
-}
-
-body {
-  font-size: 1.125rem;
-  margin: 0;
-  padding: 0;
-  color: #FFFFFF;
-}
-
 .heading-1 {
   font-size: 9.375rem;
   font-weight: normal;
@@ -85,9 +72,31 @@ p {
   max-width: 445px;
 }
 
-.page {
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: barlowCondensedRegular, sans-serif;
+}
+
+body {
   min-height: 100vh;
-  height: 100vh;
+  font-size: 1.125rem;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page--stick-to-bottom {
+  justify-content: flex-end;
 }
 
 .background {
@@ -97,11 +106,11 @@ p {
   object-fit: cover;
   position: fixed;
   z-index: -100;
+  top: 0;
 }
 
 .menu {
   display: flex;
-  position: fixed;
   align-items: center;
   width: 100vw;
   justify-content: space-between;
@@ -386,6 +395,7 @@ p {
 }
 
 .container {
+  width: 100%;
   max-width: 1110px;
   margin: 0 auto;
   padding: 0 24px;
@@ -418,8 +428,8 @@ p {
   font-family: barlowCondensedRegular;
   letter-spacing: 3.38px;
   color: #FFFFFF !important;
-  position: absolute;
-  top: 212px;
+  margin-top: 0;
+  width: 100%;
 }
 @media screen and (max-width: 1158px) {
   .page-heading {
@@ -431,9 +441,7 @@ p {
   .page-heading {
     top: 88px;
     font-size: 1rem !important;
-    left: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
+    text-align: center;
   }
 }
 
@@ -448,12 +456,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100% - 136px);
-}
-@media screen and (max-width: 1158px) {
-  .content-container {
-    height: calc(100% - 96px);
-  }
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=shared.css.map */

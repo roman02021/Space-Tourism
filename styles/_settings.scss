@@ -37,21 +37,7 @@ $header-fix-tablet: 96px;
 
 
 
-html {
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: barlowCondensedRegular, sans-serif;
-}
-body {
-    // display: flex;
-    // flex-direction: column;
-    // min-height: 100vh;
-    font-size: 1.125rem;
-    
-    margin: 0;
-    padding: 0;
-    color: $ternary;
-}
+
 
 .heading-1 {
     font-size: 9.375rem;
