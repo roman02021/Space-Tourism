@@ -75,7 +75,8 @@ p {
 .destination-tabs {
   display: flex;
   justify-content: space-between;
-  margin-top: 5rem;
+  align-items: center;
+  flex-grow: 1;
 }
 .destination-tabs__image {
   display: none;

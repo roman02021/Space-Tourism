@@ -81,7 +81,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  justify-content: center;
 }
 @media screen and (max-width: 1158px) {
   .crew__photo-container {
@@ -100,7 +99,7 @@ p {
 .crew__info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 1158px) {
   .crew__info {
@@ -108,13 +107,22 @@ p {
   }
 }
 .crew__info-subcontainer {
-  margin-top: 150px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
 }
 .crew__role {
   display: none;
 }
 .crew__role.active {
   display: block;
+}
+@media screen and (max-width: 1158px) {
+  .crew__role {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 .crew__name {
   display: none;
@@ -123,6 +131,12 @@ p {
 .crew__name.active {
   display: block;
 }
+@media screen and (max-width: 1158px) {
+  .crew__name {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
 .crew__bio {
   display: none;
   height: 250px;
@@ -130,6 +144,19 @@ p {
 }
 .crew__bio.active {
   display: block;
+}
+@media screen and (max-width: 1158px) {
+  .crew__bio {
+    font-size: 1rem;
+    text-align: center;
+    height: 115px;
+  }
+}
+@media screen and (max-width: 1158px) {
+  .crew__tabs {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 .crew__tab {
   cursor: pointer;

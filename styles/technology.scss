@@ -2,7 +2,8 @@
 
 .technology {
     display: flex;
-    height: 100%;
+    // height: 100%;
+    flex-grow: 1;
     align-items: center;
     justify-content: space-between;
     &__image {
