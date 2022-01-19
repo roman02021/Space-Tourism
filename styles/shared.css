@@ -115,6 +115,8 @@ body {
   width: 100vw;
   justify-content: space-between;
   margin-top: 40px;
+  position: relative;
+  overflow: hidden;
 }
 .menu__logo {
   fill: white;
