@@ -78,6 +78,18 @@ p {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1158px) {
+  .technology__img {
+    height: 310px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 816px) {
+  .technology__img {
+    height: 170px;
+  }
+}
 .technology__image {
   display: none;
 }
@@ -89,10 +101,19 @@ p {
   flex-direction: column;
   margin-right: 80px;
 }
+@media screen and (max-width: 1158px) {
+  .technology__tabs {
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 3.5rem;
+    margin-bottom: 2.75rem;
+  }
+}
 .technology__tab {
   font-family: bellfairRegular;
   font-size: 2rem;
-  border: 1px solid #363841;
+  border: 1px solid #9b9ca1;
   cursor: pointer;
   background-color: transparent;
   border-radius: 50%;
@@ -111,6 +132,16 @@ p {
 .technology__tab:hover {
   border-color: #FFFFFF;
 }
+@media screen and (max-width: 1158px) {
+  .technology__tab {
+    height: 60px;
+    width: 60px;
+  }
+  .technology__tab:not(:last-child) {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+}
 .technology__title {
   display: none;
   text-transform: uppercase;
@@ -118,6 +149,17 @@ p {
 }
 .technology__title.active {
   display: block;
+}
+@media screen and (max-width: 1158px) {
+  .technology__title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 816px) {
+  .technology__title {
+    font-size: 1.5rem;
+  }
 }
 .technology__description {
   display: none;
@@ -127,8 +169,51 @@ p {
 .technology__description.active {
   display: block;
 }
+@media screen and (max-width: 1158px) {
+  .technology__description {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 816px) {
+  .technology__description {
+    font-size: 0.9375rem;
+  }
+}
 .technology__tabs-and-info {
   display: flex;
+}
+@media screen and (max-width: 1158px) {
+  .technology__tabs-and-info {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 816px) {
+  .technology__tabs-and-info {
+    padding: 0 24px;
+  }
+}
+@media screen and (max-width: 1158px) {
+  .technology__container {
+    width: calc(100% + 48px);
+  }
+}
+@media screen and (max-width: 1158px) {
+  .technology__subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 816px) {
+  .technology__subtitle {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 1158px) {
+  .technology {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 }
 
 .menu__container {

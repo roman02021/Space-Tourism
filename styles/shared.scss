@@ -324,7 +324,6 @@ body {
 .right-container {
     max-width: calc(100vw / 2 + 1158px / 2);
     margin-left: auto;
-    padding-left: 24px;
     width: 100%;
     // height: calc(100% - #{$header-fix})
     flex-grow: 1;
@@ -336,6 +335,7 @@ body {
     max-width: calc(100vw / 2 + 1158px / 2);
     margin-right: auto;
     padding-right: 24px;
+
 }
 .header-fix {
     height: $header-fix;

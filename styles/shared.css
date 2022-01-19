@@ -409,7 +409,6 @@ body {
 .right-container {
   max-width: calc(100vw / 2 + 1158px / 2);
   margin-left: auto;
-  padding-left: 24px;
   width: 100%;
   flex-grow: 1;
   display: flex;

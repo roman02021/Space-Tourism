@@ -6,21 +6,39 @@
     flex-grow: 1;
     align-items: center;
     justify-content: space-between;
+    &__img {
+        @media screen and (max-width: $desktop) {
+            height: 310px;
+            width: 100%;
+            object-fit: cover;
+        }
+        @media screen and (max-width: $tablet) {
+            height: 170px;
+        }
+    }
     &__image {
         display: none;
         &.active {
             display: block;
         }
+
     }
     &__tabs {
         display: flex;
         flex-direction: column;
         margin-right: 80px;
+        @media screen and (max-width: $desktop) {
+            flex-direction: row;
+            justify-content: center;
+            margin-right: 0;
+            margin-top: 3.5rem;
+            margin-bottom: 2.75rem;
+        }
     }
     &__tab {
         font-family: bellfairRegular;
         font-size: 2rem;
-        border: 1px solid #363841;
+        border: 1px solid #9b9ca1;
         cursor: pointer;
         background-color: transparent;
         border-radius: 50%;
@@ -38,6 +56,15 @@
         &:hover {
             border-color: $ternary;
         }
+        @media screen and (max-width: $desktop) {
+            height: 60px;
+            width: 60px;
+           
+            &:not(:last-child){
+                margin-right: 1rem;
+                margin-bottom: 0;
+            }
+        }
     }
     &__title {
         display: none;
@@ -45,6 +72,13 @@
         margin: 12px 0 12px -4px;
         &.active {
             display: block;
+        }
+        @media screen and (max-width: $desktop) {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        @media screen and (max-width: $tablet) {
+            font-size: 1.5rem;
         }
     }
     &__description {
@@ -54,9 +88,41 @@
         &.active {
             display: block;
         }
+        @media screen and (max-width: $desktop) {
+            font-size: 1rem;
+            text-align: center;
+        }
+        @media screen and (max-width: $tablet) {
+            font-size: 0.9375rem;
+        }
     }
     &__tabs-and-info {
         display: flex;
+        @media screen and (max-width: $desktop) {
+            flex-direction: column;
+        }
+        @media screen and (max-width: $tablet) {
+            padding: 0 24px;
+        }
+    }
+    &__container {
+        @media screen and (max-width: $desktop) {
+            width: calc(100% + 48px);
+            // margin-left: -$gap * 2;
+        }
+    }
+    &__subtitle {
+        @media screen and (max-width: $desktop) {
+            font-size: 1rem;
+            text-align: center;
+        }
+        @media screen and (max-width: $tablet) {
+            font-size: 0.875rem;
+        }
+    }
+    @media screen and (max-width: $desktop) {
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 }
 .menu { 
