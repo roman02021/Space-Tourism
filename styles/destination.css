@@ -188,6 +188,7 @@ p {
 @media screen and (max-width: 1158px) {
   .destination-tabs__stats {
     justify-content: space-evenly;
+    margin-bottom: 58px;
   }
 }
 @media screen and (max-width: 816px) {

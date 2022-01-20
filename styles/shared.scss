@@ -4,6 +4,7 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
+    overflow: hidden;
     font-family: barlowCondensedRegular, sans-serif;
 }
 body {
@@ -46,7 +47,7 @@ body {
     justify-content: space-between;
     margin-top: 40px;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     &__logo {
         fill: white;
         margin-left: 55px;
@@ -73,19 +74,18 @@ body {
         // transition: all 1s linear;
         // right: -100%;
         &.open {
-            right: 255px;
+            right: 0px;
         }
         // &.loaded {
         //     background-color: transparent; 
         // backdrop-filter: bl;
         // }
         @media screen and (max-width: $tablet){
-            transform: translateX(100%);
             height: 100vh;
             margin-left: 0;
             width: 255px;
             position: absolute;
-            right: 0;
+            right: -255px;
             top: 0;
         }
     }
@@ -264,7 +264,8 @@ body {
     }
     @media screen and (max-width: $tablet){
         display: block;
-        position: fixed;
+        // position: fixed;
+        position: relative;
         right: $gap;
     }
 }

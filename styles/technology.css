@@ -178,6 +178,7 @@ p {
 @media screen and (max-width: 816px) {
   .technology__description {
     font-size: 0.9375rem;
+    margin-bottom: 80px;
   }
 }
 .technology__tabs-and-info {
