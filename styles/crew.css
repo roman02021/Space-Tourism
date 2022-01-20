@@ -87,7 +87,7 @@ p {
     align-items: center;
   }
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew__photo-container {
     order: 1;
     border-bottom: 1px solid #85868B;
@@ -103,7 +103,7 @@ p {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew__wrapper {
     justify-content: center;
   }
@@ -122,7 +122,7 @@ p {
     max-height: 530px;
   }
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew__image {
     max-height: 250px;
   }
@@ -137,7 +137,7 @@ p {
     align-items: center;
   }
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew__info {
     order: 2;
   }
@@ -147,13 +147,15 @@ p {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew__info-subcontainer {
     order: 2;
   }
 }
 .crew__role {
   display: none;
+  font-family: bellfairRegular;
+  color: rgba(255, 255, 255, 0.5);
 }
 .crew__role.active {
   display: block;
@@ -164,7 +166,7 @@ p {
     text-align: center;
   }
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew__role {
     font-size: 1rem;
   }
@@ -182,7 +184,7 @@ p {
     text-align: center;
   }
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew__name {
     font-size: 1.5rem;
   }
@@ -193,7 +195,7 @@ p {
   justify-content: center;
   flex-grow: 1;
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew__info-container {
     order: 2;
   }
@@ -214,7 +216,7 @@ p {
     height: 115px;
   }
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew__bio {
     font-size: 0.9375rem;
   }
@@ -225,7 +227,7 @@ p {
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew__tabs {
     order: 1;
     margin: 2rem 0;
@@ -233,7 +235,7 @@ p {
 }
 .crew__tab {
   cursor: pointer;
-  background-color: #363841;
+  background-color: rgba(255, 255, 255, 0.175);
   border: none;
   height: 15px;
   width: 15px;
@@ -243,7 +245,7 @@ p {
   margin-right: 24px;
 }
 .crew__tab:hover {
-  background-color: #85868B;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .crew__tab.active {
   background-color: #FFFFFF;
@@ -252,7 +254,6 @@ p {
   .crew__tab {
     height: 10px;
     width: 10px;
-    background-color: #41434B;
   }
 }
 @media screen and (max-width: 1158px) {
@@ -260,7 +261,7 @@ p {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew {
     justify-content: flex-start;
   }
@@ -270,7 +271,7 @@ p {
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew-page-heading {
     display: none;
   }
@@ -278,7 +279,7 @@ p {
 .crew-page-heading--mobile {
   display: none;
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 706px) {
   .crew-page-heading--mobile {
     display: block;
   }

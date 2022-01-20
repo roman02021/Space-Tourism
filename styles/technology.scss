@@ -91,6 +91,8 @@
         @media screen and (max-width: $desktop) {
             font-size: 1rem;
             text-align: center;
+            height: 170px;
+            margin-bottom: 100px;
         }
         @media screen and (max-width: $tablet) {
             font-size: 0.9375rem;
@@ -127,7 +129,7 @@
     }
 }
 .menu { 
-    &__container {
-        width: calc(100vw / 2 + 1158px / 2);
-    }
+    // &__container {
+    //     width: calc(100vw / 2 + 1158px / 2);
+    // }
 }

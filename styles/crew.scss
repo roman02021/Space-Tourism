@@ -77,6 +77,8 @@
     }
     &__role {
         display: none;
+        font-family: bellfairRegular;
+        color: rgba($color: #fff, $alpha: 0.5);
         &.active {
             display: block;
         }
@@ -142,7 +144,7 @@
     }
     &__tab {
         cursor: pointer;
-        background-color: #363841;
+        background-color: rgba($color: #fff, $alpha: 0.175);
         border: none;
         height: 15px;
         width: 15px;
@@ -151,7 +153,7 @@
             margin-right: 24px;
         }
         &:hover {
-            background-color: #85868B;
+            background-color: rgba($color: #fff, $alpha: 0.5);
         }
         &.active {
             background-color: $ternary;
@@ -159,7 +161,6 @@
         @media screen and (max-width: $desktop) {
             height: 10px;
             width: 10px;
-            background-color: #41434B;
         }
     }
     @media screen and (max-width: $desktop) {
