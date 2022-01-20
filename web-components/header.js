@@ -4,7 +4,7 @@ class Header extends HTMLElement {
         <header class="menu">
           <div class="menu__logo-container">
             <a href="index.html">
-              <img class="menu__logo" src="../assets/shared/logo.svg">
+              <img class="menu__logo" src="assets/shared/logo.svg">
             </a>
           </div>        
           <button class="hamburger js-hamburger">

@@ -14,19 +14,6 @@
   font-family: barlowCondensedBold;
   src: url("../assets/fonts/BarlowCondensed-Bold.woff2") format("woff2"), url("../assets/fonts/BarlowCondensed-Bold.woff") format("woff");
 }
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: barlowCondensedRegular, sans-serif;
-}
-
-body {
-  font-size: 1.125rem;
-  margin: 0;
-  padding: 0;
-  color: #FFFFFF;
-}
-
 .heading-1 {
   font-size: 9.375rem;
   font-weight: normal;
@@ -88,7 +75,8 @@ p {
 .destination-tabs {
   display: flex;
   justify-content: space-between;
-  margin-top: 5rem;
+  align-items: center;
+  flex-grow: 1;
 }
 .destination-tabs__image {
   display: none;
@@ -200,6 +188,7 @@ p {
 @media screen and (max-width: 1158px) {
   .destination-tabs__stats {
     justify-content: space-evenly;
+    margin-bottom: 58px;
   }
 }
 @media screen and (max-width: 816px) {
@@ -244,6 +233,7 @@ p {
   .destination-tabs {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
 
