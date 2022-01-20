@@ -2,12 +2,27 @@ window.onload = () => {
 
 //Selected menu item -- START
 let selected = 0;
-for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href === document.URL) {
-        selected = i;
+// for (var i = 0; i < document.links.length; i++) {
+    
+//     if (document.links[i].href === document.URL) {
+//         selected = i;
+//     }
+    
+// }
+const menuLinks = document.querySelector(".menu__list").querySelectorAll("a");
+for (var i = 0; i < menuLinks.length; i++) {
+    if(document.location.pathname === '/'){
+        selected = 0;
+        console.log("haha");
+        break;
     }
+    else if (menuLinks[i].href === document.URL) {
+        selected = i;
+        break;
+    }
+    
 }
-document.links[selected].classList.add('selected');
+menuLinks[selected].classList.add('selected');
 //Selected menu item -- END
 
 //Menu item container width -- START
