@@ -206,16 +206,17 @@ p {
     text-align: center;
   }
 }
-.destination-tabs__stat-container:not(:last-child) {
-  margin-right: 5rem;
-}
-@media screen and (max-width: 1158px) {
-  .destination-tabs__stat-container:not(:last-child) {
-    margin-right: 0;
-  }
+.destination-tabs__stat-container {
+  width: 50%;
 }
 @media screen and (max-width: 706px) {
   .destination-tabs__stat-container:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 706px) {
+  .destination-tabs__stat-container {
+    width: 100%;
     margin-bottom: 2rem;
   }
 }
