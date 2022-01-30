@@ -63,20 +63,20 @@
         font-family: bellfairRegular;
         border: 0;
         text-transform: uppercase;
-        outline: 0 solid #24262F00;
+        outline: 0 solid rgba($color: #fff, $alpha: .1);
         transition: outline 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
         height: 275px;
         width: 275px;
         cursor: pointer;
         text-decoration: none;
         &:hover{ 
-            outline: 60px solid #24262FFF;
+            outline: 60px solid rgba($color: #fff, $alpha: .1);
 
             @media screen and (max-width: $desktop){
-                outline: 45px solid #24262FFF;
+                outline: 45px solid rgba($color: #fff, $alpha: .1);
             }
             @media screen and (max-width: $tablet){
-                outline: 30px solid #24262FFF;
+                outline: 30px solid rgba($color: #fff, $alpha: .1);
             }
         }
         @media screen and (max-width: $desktop){

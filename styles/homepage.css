@@ -144,7 +144,7 @@ p {
   font-family: bellfairRegular;
   border: 0;
   text-transform: uppercase;
-  outline: 0 solid #24262F00;
+  outline: 0 solid rgba(255, 255, 255, 0.1);
   transition: outline 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
   height: 275px;
   width: 275px;
@@ -152,16 +152,16 @@ p {
   text-decoration: none;
 }
 .hero__cta:hover {
-  outline: 60px solid #24262FFF;
+  outline: 60px solid rgba(255, 255, 255, 0.1);
 }
 @media screen and (max-width: 1158px) {
   .hero__cta:hover {
-    outline: 45px solid #24262FFF;
+    outline: 45px solid rgba(255, 255, 255, 0.1);
   }
 }
 @media screen and (max-width: 706px) {
   .hero__cta:hover {
-    outline: 30px solid #24262FFF;
+    outline: 30px solid rgba(255, 255, 255, 0.1);
   }
 }
 @media screen and (max-width: 1158px) {
