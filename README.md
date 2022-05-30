@@ -1,3 +1,5 @@
 # Challenge 1 (Space Tourism)
 
-https://www.frontendmentor.io/profile/roman02021
+Solved using: Vanilla JS, SCSS, Web Components
+
+Frontend Mentor Profile: https://www.frontendmentor.io/profile/roman02021
